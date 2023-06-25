@@ -1,5 +1,4 @@
 require('express-async-errors')
-
 import Book from '../models/book'
 import { bookSchema } from '../utils/validators'
 

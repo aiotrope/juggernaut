@@ -4,6 +4,7 @@ const BASE_URL = 'http://localhost:1234/api/book'
 
 const create = async (dataObj) => {
   const request = await axios.post(BASE_URL, dataObj)
+
   if (request.data && request.status === 200) {
     return request.data
   }

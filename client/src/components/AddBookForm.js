@@ -8,22 +8,32 @@ import bookService from '../services/book'
 
 const AddBookForm = (props) => {
   const [name, setName] = useState('')
+
   const [author, setAuthor] = useState('')
+
   const [pages, setPages] = useState(0)
 
   const handleChangeName = (event) => {
     event.persist()
+
     const target = event.target.value
+
     setName(target)
   }
+
   const handleChangeAuthor = (event) => {
     event.persist()
+
     const target = event.target.value
+
     setAuthor(target)
   }
+
   const handleChangePages = (event) => {
     event.persist()
+
     const target = parseInt(event.target.value)
+
     setPages(target)
   }
 
@@ -32,6 +42,7 @@ const AddBookForm = (props) => {
       const response = await bookService.create(dataObj)
       if (response) {
         props.setBooks((prevState) => [...prevState, response])
+
         props.setCounter((c) => c + 1)
       }
     } catch (err) {
