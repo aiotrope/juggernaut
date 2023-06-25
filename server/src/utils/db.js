@@ -18,7 +18,7 @@ const dbConnection = () => {
   const conn = mongoose.connection
 
   conn.once('open', () => {
-    logger.info(`Database connected: ${dbURL}`)
+    logger.debug(`Database connected: ${dbURL}`)
   })
 
   conn.on('error', (error) => {

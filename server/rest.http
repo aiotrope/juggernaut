@@ -1,0 +1,15 @@
+### create book
+POST http://localhost:1234/api/book
+Content-Type: application/json
+
+{
+   "name": "Book 2",
+   "author": "Sample Author",
+   "pages": 844
+}
+
+### get all books
+GET http://localhost:1234/api/book
+
+### get book by ID
+GET http://localhost:1234/api/book/64988fe9a3dd8dd94efd6c671
