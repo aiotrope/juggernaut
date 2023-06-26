@@ -2,6 +2,7 @@ import Box from '@mui/material/Box'
 import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
 import ListItemText from '@mui/material/ListItemText'
+import { Link } from 'react-router-dom'
 
 const BookList = (props) => {
   const list = props.books
@@ -10,7 +11,9 @@ const BookList = (props) => {
       <List>
         {list.map(({ id, name, author }) => (
           <ListItem key={id} disablePadding>
-            <ListItemText primary={`${name} by ${author}`} />
+            <Link to={`/book/${name}`}>
+              <ListItemText primary={`${name} by ${author}`} />
+            </Link>
           </ListItem>
         ))}
       </List>

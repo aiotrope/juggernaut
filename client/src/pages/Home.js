@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import Box from '@mui/material/Box'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
@@ -7,10 +7,7 @@ import AddBookForm from '../components/AddBookForm'
 import BookList from '../components/BookList'
 import bookService from '../services/book'
 
-const Home = (props) => {
-  const [books, setBooks] = useState([])
-  const [counter, setCounter] = useState(0)
-
+const Home = ({ setBooks, setCounter, counter, books }) => {
   useEffect(() => {
     let mounted = true
     const getAllBooks = async () => {
@@ -30,7 +27,7 @@ const Home = (props) => {
     return () => {
       mounted = false
     }
-  }, [])
+  }, [setBooks, setCounter])
 
   return (
     <Box component='main' sx={{ p: 3 }}>
