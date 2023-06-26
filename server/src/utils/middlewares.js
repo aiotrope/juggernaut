@@ -97,7 +97,7 @@ const middlewares = {
   loggingMiddleware,
   endPoint404,
   errorHandler,
-  validateBookObject
+  validateBookObject,
 }
 
 export default middlewares

@@ -7,7 +7,7 @@ import { bookSchema } from '../utils/validators'
 const createBook = async (req, res) => {
   let { body } = req
   try {
-    const foundBook = await Book.findOne({ name: req.body.name  })
+    const foundBook = await Book.findOne({ name: req.body.name })
 
     if (foundBook) throw Error('Cannot use this book name')
 

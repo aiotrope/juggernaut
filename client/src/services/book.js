@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const BASE_URL = 'http://localhost:1234/api/book'
+const BASE_URL = 'http://localhost:8080/api/book'
 
 const create = async (dataObj) => {
   const request = await axios.post(BASE_URL, dataObj)

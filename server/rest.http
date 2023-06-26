@@ -1,5 +1,5 @@
 ### create book
-POST http://localhost:1234/api/book
+POST http://localhost:8080/api/book
 Content-Type: application/json
 
 {
@@ -9,7 +9,7 @@ Content-Type: application/json
 }
 
 ### get all books
-GET http://localhost:1234/api/book
+GET http://localhost:8080/api/book
 
 ### get book by ID
-GET http://localhost:1234/api/book/64988fe9a3dd8dd94efd6c671
+GET http://localhost:8080/api/book/64988fe9a3dd8dd94efd6c671
