@@ -4,7 +4,7 @@ Thirteenth weekly exercise.
 ##### CLI Commands
 
 ``` bash
-# serve prod. full stack app @ port 1234
+# serve prod. full stack app @ port 8080
 npm run start
 
 # install dependencies server
@@ -13,7 +13,7 @@ npm run preinstall
 # build server @ server/dist directory
 npm run build:server
 
-# run server @ port 1234 on debug
+# run server @ port 8080 on debug
 npm run dev:server
 
 # install dependencies client
