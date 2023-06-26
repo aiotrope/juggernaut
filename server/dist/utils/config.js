@@ -7,7 +7,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _dotenv = _interopRequireDefault(require("dotenv"));
 _dotenv.default.config();
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 1234;
 var MONGO_URL = process.env.MONGO_URL || 'mongodb://127.0.0.1:27017/testdb';
 var BASE_URL = process.env.BASE_URL || 'http://localhost:8080';
 var config = {
